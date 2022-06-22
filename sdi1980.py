@@ -227,7 +227,7 @@ def zapfired(x,y):
     tempturt.fire(x,y)
     explosions.append(tempturt)
     #explosions.append(trtl.Turtle())
-    print("zap!!!!!")
+    #print("zap!!!!!")
     score = score - ZAP_COST
 
 def draw_score():
@@ -276,7 +276,7 @@ def gametick():
                 tempturt = ExplosionTurtle()
                 tempturt.fire(missposx,missposy)
                 tempexplode.append(tempturt)
-                print("missile destroyed")
+                #print("missile destroyed")
                 missiles.remove(miss)
                 miss.clear()
                 score = score + MISSILE_BONUS
@@ -297,7 +297,7 @@ def gametick():
         if (miss.ycor() < -screenheight):
             missiles.remove(miss)
             miss.clear()
-            print("missile landed")
+            #print("missile landed")
             score = score - LANDED_PENALTY
     for expl in explosions:
         expl.grow()
