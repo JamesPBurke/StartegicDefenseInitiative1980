@@ -3,7 +3,9 @@ sdi1980.py
 
 This program uses turtle graphics to simulate the old Missile Command game. The purpose of this program
 is to allow me to get practice subclassing objects, and so I'm probably not using turtles as intended, 
-but I am able to piggyback over the built-in updating that turtles 
+but I am able to piggyback over the built-in updating that turtles do.
+
+
 
 author: James P. Burke
 '''
