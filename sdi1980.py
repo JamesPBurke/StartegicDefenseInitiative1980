@@ -5,7 +5,15 @@ This program uses turtle graphics to simulate the old Missile Command game. The 
 is to allow me to get practice subclassing objects, and so I'm probably not using turtles as intended, 
 but I am able to piggyback over the built-in updating that turtles do.
 
+Inspired by a popular 80's game, this version was written from scratch in five hours on
+June 21, 2022 by the author.
 
+Instructions: click the screen to zap and cause an expanding explosion. Use explosions to block
+the falling projectiles. You score points when a projectile is blocked.
+You lose points if projectiles reach the bottom of the play area.
+You spend points firing zaps, so don't spam zaps; be careful about how you place
+explosions in order to mazimize your score.
+The game ends when the timer reaches zero.
 
 author: James P. Burke
 '''
