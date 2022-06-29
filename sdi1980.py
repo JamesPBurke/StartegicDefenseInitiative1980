@@ -37,6 +37,9 @@ EXPLOSION_DEATH_SIZE = 85
 ZAP_COST = 55
 LANDED_PENALTY = 300
 MISSILE_BONUS = 100
+MISSILE_COLOR = "red"
+BG_COLOR = "black"
+BORDER_COLOR = "white"
 
 # global variables used to keep track of the running score, the countdown timer
 # that ends the game, and how many milliseconds have accumulated since the last second passed
@@ -46,6 +49,7 @@ subsecond = 0
 
 # get a reference to the screen and use it to turn off automatic updates
 wn = trtl.Screen()
+wn.bgpic("stars.png")
 wn.tracer(0)
 
 # set the size of the play area and store it for use later
@@ -70,6 +74,7 @@ def draw_border():
     """
     pen.speed(0)
     pen.hideturtle()
+    pen.pencolor(BORDER_COLOR)
     pen.penup()
     n=1
     pen.goto(screenwidth/n,screenheight/n)
